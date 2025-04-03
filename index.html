@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShowTime</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-black text-white">
+    <header class="p-4 bg-red-600 text-center">
+        <h1 class="text-3xl font-bold">ShowTime</h1>
+        <nav class="mt-2">
+            <a href="index.html" class="text-white mx-2">Home</a>
+            <a href="login.html" class="text-white mx-2">Login</a>
+            <a href="register.html" class="text-white mx-2">Register</a>
+        </nav>
+    </header>
+    
+    <main class="container mx-auto p-4">
+        <section class="text-center">
+            <h2 class="text-2xl font-semibold">Film Pilihan Hari Ini</h2>
+            <p class="text-gray-400">Film terbaik yang wajib ditonton</p>
+        </section>
+        
+        <section class="mt-6">
+            <h2 class="text-xl font-semibold">Cari Film</h2>
+            <input type="text" id="searchInput" class="block w-full p-2 mt-2 bg-gray-700 text-white rounded" placeholder="Cari film...">
+            <div id="searchResults" class="mt-4"></div>
+        </section>
+        
+        <section class="mt-6">
+            <h2 class="text-xl font-semibold">Kategori Film</h2>
+            <div id="filmList" class="grid grid-cols-3 gap-4 mt-4">
+                <a href="detail.html" class="block bg-red-600 p-4 rounded-lg text-center" data-title="Film 1" data-desc="Deskripsi Film 1" data-video="ica.mp4">Film 1</a>
+                <a href="detail.html" class="block bg-red-600 p-4 rounded-lg text-center" data-title="Film 2" data-desc="Deskripsi Film 2" data-video="cewegua.mp4">Film 2</a>
+                <a href="detail.html" class="block bg-red-600 p-4 rounded-lg text-center" data-title="Film 3" data-desc="Deskripsi Film 3" data-video="mine.mp4">Film 3</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
